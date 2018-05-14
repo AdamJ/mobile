@@ -19,7 +19,7 @@ env:
 
 before_script:
   - npm install -g @angular/cli
-  - npm init
+  - npm install
 
 deploy:
   on:
