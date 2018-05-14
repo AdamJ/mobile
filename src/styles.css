@@ -1,1 +1,10 @@
+/*!
+ * https://www.adamjolicoeur.com/mobile
+ *  v0.0.0
+ * Copyright 2008-2018
+ * Licensed under
+ */
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --header-h1-color: #369;
+}

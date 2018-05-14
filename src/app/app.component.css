@@ -1,0 +1,9 @@
+/*!
+ * https://www.adamjolicoeur.com/mobile
+ *  v0.1.0
+ * Copyright 2008-2018
+ */
+h1 {
+  color: var(--header-h1-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%; }

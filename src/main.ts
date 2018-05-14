@@ -1,4 +1,6 @@
 import { enableProdMode } from '@angular/core';
+import { hammerjs } from 'hammerjs';
+import {MatCardModule} from '@angular/material/card';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
