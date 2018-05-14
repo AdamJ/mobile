@@ -8,8 +8,8 @@ This is a mobile test environment using Angular and Material Design.
 | ---------- | ----------:|
 | Nodejs | v8.9.4 |
 | NPM | v5.6.0 |
-| Angular | 6 |
-| Material Design | |
+| Angular | 6.0.1 |
+| Angular Material | 6.0.1 |
 
 ## Notes
 
