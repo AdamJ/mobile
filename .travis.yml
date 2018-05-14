@@ -1,0 +1,25 @@
+language: node_js
+
+cache: false
+
+notifications:
+  email: mindreeper2420@gmail.com
+
+node_js:
+  - '8'
+
+env:
+  global:
+    - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
+    - TRIGGER_REPO_SLUG: "mindreeper2420/mobile"
+    - TRIGGER_REPO_BRANCH: "master"
+
+before_script:
+  - npm install -g @angular/cli
+
+deploy:
+  on:
+    branch: master-dist
+    repo: mindreeper2420/mobile
+
+script: ng build
