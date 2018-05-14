@@ -21,8 +21,6 @@ before_script:
   - npm install -g @angular/cli
   - npm init
 
-install: true
-
 deploy:
   on:
     branch: master-dist
