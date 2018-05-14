@@ -12,7 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.0.0",
-    "@angular/cdk": "^6.0.0",
+    "@angular/cdk": "^6.0.1",
     "@angular/common": "^6.0.0",
     "@angular/compiler": "^6.0.0",
     "@angular/core": "^6.0.0",
@@ -30,9 +30,9 @@
     "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
     "bootstrap": "^4.0.0",
     "core-js": "^2.5.4",
+    "document-register-element": "^1.7.2",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26",
-    "document-register-element": "^1.7.2"
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.0",
