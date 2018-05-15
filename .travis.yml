@@ -19,9 +19,12 @@ env:
 
 before_script:
   - npm install -g @angular/cli
-  - npm install
 
 deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
   on:
     branch: master-dist
     repo: mindreeper2420/mobile
