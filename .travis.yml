@@ -24,4 +24,4 @@ deploy:
   keep-history: true
   on:
     branch: master-dist
-script: ng build
+script: npm run deploy
