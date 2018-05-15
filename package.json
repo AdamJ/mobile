@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "docs": "ng build --prod --base-href 'https://mindreeper2420.github.io/mobile/'"
+    "docs": "ng build --prod --output-path docs --base-href mobile"
   },
   "private": true,
   "dependencies": {
