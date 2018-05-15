@@ -1,32 +1,25 @@
 language: node_js
-
 cache: false
-
 notifications:
   email: mindreeper2420@gmail.com
-
 node_js:
-  - '8'
-
+- '8'
 addons:
   chrome: stable
-
 env:
   global:
-    - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
-    - TRIGGER_REPO_SLUG: "mindreeper2420/mobile"
-    - TRIGGER_REPO_BRANCH: "master"
-
+  - COMMIT_AUTHOR_EMAIL: mindreeper2420@gmail.com
+  - TRIGGER_REPO_SLUG: mindreeper2420/mobile
+  - TRIGGER_REPO_BRANCH: master
+  matrix:
+    secure: XDX/0F0wcyqpS8EGP4nP4rzvWlai1EvMG+4+ULs5jtnqFkOmkvpZnqDCUKrQOhLYx/cKy7ppqxlJmYfIiJET3ZmolP6Y9AL1gvDcv2I8SKG4NYsIzRAHa19rRI+vkzS+jDHAXeQUJG8ixHbLNiJKPSDVu13aNdbHlH05VwHuEo8IQa8vlNExtkudLrBSDhZWS8Hkg6Uw9d4I750s7X19pE/GviCFqin+fUP8YNMkN4ImKniXyqb0XkRtAsvheSu/Qd0+JFAI1ZphO+2f2H+pEhUCr/o1NnbyOW+wvFRaKHJjekQSOyK2N+OVPf4MuLknFf/ZMNKDRO24j1Y20H6BQVnVMrV8Gbcv6Eicw/Yn7s8J/GHBI3t56w/+4udi1PEdd+36b1tX5aLJYdqUQTmOsNONp7u9mjImnN0fVXYU0yaiV5u6jYrD6sayr1RxCLxc+EAbZGRUWBsjKbgcYPC2qPQ6HyOrxVZjlgM1QarRoqk1YIAyqu/2zQwxL33YPtm9RZVki+e6yBJsUEFuCEzM2eI0TcSEnkiwd19ZekQ/5hzxmAQjB2gCaGl1pNbGw85RZdGnK3MGEBLGRe8es8/bVJ/SWxwKPENIJYpBDpo5GEpb+2F5Sb25Z74meRQhO+aqLWtSooAuyqGGF1PTtkIud+Fk0UfZAsqDHSHJatWyJUs=
 before_script:
-  - npm install -g @angular/cli
-
+- npm install -g @angular/cli
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
     branch: master-dist
-    repo: mindreeper2420/mobile
-
 script: ng build
