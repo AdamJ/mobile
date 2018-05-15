@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "docs": "ng build --prod --base-href 'https://mindreeper2420.github.io/mobile/'"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +28,7 @@
     "@angular/service-worker": "^6.0.0",
     "@ng-bootstrap/ng-bootstrap": "^2.0.0-alpha.0",
     "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
+    "angular-cli-ghpages": "^0.5.2",
     "bootstrap": "^4.0.0",
     "core-js": "^2.5.4",
     "document-register-element": "^1.7.2",
